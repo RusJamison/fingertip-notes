@@ -61,14 +61,14 @@ header {
         border: 10px solid green;
     }
 
-    p #date {
+   /* p #date {
         max-width: 380px;
         background-color: aliceblue;
         margin: 5px auto 0px;
         padding: 5px;
         border-radius: 5px 5px;
         border: 10px solid: white;
-    }
+    }*/
 
     #note-form input[type='text'] {
         font-size: 1rem;
@@ -92,5 +92,14 @@ header {
         justify-content: space-between;
         margin: 10px;
         background-color: aliceblue;
+    }
+
+    #note-list {
+        list-style: none;
+
+    }
+
+    #note-form button:hover {
+        background-color: aqua;
     }
 

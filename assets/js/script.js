@@ -15,4 +15,21 @@ function addDate(){
 const noteList = document.querySelector('note-list');
 const noteInput = document.querySelector('note-input');
 const noteForm = document.querySelector('note-form');
-const noteApp = document.querySelector('note-app')
+const noteButton = document.getElementById('note-button')
+
+noteButton.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const newTask = noteInput.value;
+
+    if(newTask === ""){
+        alert('Please enter a todo note');
+        return;
+
+    }
+    noteInput.value = '';
+    addTask (newTask);
+})
+function addTask(task){
+
+}
+
