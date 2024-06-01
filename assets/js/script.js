@@ -10,3 +10,6 @@ function addDate(){
         document.write("Today's date is: " + day + '/' + month + '/' + year);
     }
 }
+
+//Declaring variables
+const 
