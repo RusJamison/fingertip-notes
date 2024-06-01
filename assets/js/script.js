@@ -12,4 +12,7 @@ function addDate(){
 }
 
 //Declaring variables
-const 
+const noteList = document.querySelector('note-list');
+const noteInput = document.querySelector('note-input');
+const noteForm = document.querySelector('note-form');
+const noteApp = document.querySelector('note-app')
