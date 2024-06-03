@@ -1,20 +1,21 @@
 /* Access of date for planning to do list*/
 function addDate(){
-    date = new Date();
-    var month = date.getMonth() + 1;
-    var day = date.getDate();
-    var year = date.getFullYear();
+    let date = new Date();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    let year = date.getFullYear();
 
-    if (document.getElementById('date').value == ''){
-        document.getElementById('date').value = day + '-' + month + '-' + year;
-        document.write("Today's date is: " + day + '/' + month + '/' + year);
+    let formattedDate = year + '=' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day;
+
+    document.getElementById('note-date').value = formattedDate;
     }
-}
+//Run addDate when the page loads
+window.onload = addDate;
 
 //Declaring variables
 const noteList = document.querySelector('#note-list');
 const noteInput = document.querySelector('#note-input');
-const noteButton = document.getElementById('#note-button')
+const noteButton = document.querySelector('#note-button')
 
 
 noteButton.addEventListener('submit', function(event) {
