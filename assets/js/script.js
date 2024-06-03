@@ -14,14 +14,13 @@ function addDate(){
 //Declaring variables
 const noteList = document.querySelector('#note-list');
 const noteInput = document.querySelector('#note-input');
-const noteForm = document.querySelector('#note-form');
 const noteButton = document.getElementById('#note-button')
 
 noteButton.addEventListener('click', function(event) {
     event.preventDefault();
-    const newJob = noteInput.value;
+    const newJob = noteInput.value.trim();
 
-    if (newJob === ' ') {
+    if (newJob === '') {
         alert ( 'Enter new job');
         return;
     }
@@ -30,21 +29,41 @@ noteButton.addEventListener('click', function(event) {
     addTask(newJob);
 
     
-})
+});
 
 function addTask(job){
     const noteListItem = document.createElement('li');
+
+    const checkbox.type = 'checkbox';
+    checkbox.addEventListener('change', function(){
+        noteSpan.style.textDecoration =checkbox.checked?'line-through':'none';
+    })
+
     const noteSpan = document.createElement('span');
-    //noteListItem.textContent = note;
-    //noteList.appendChild(noteListItem);
     noteSpan.textContent = job;
-    noteListItem.appendChild(noteSpan);
+
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Edit';
+    editButton.addEventListener('click', function(){
+        const newJob = prompt('Edit your job', noteSpan.textContent);
+        if(newJob!==null){
+            noteSpan.textContent = newJob.trim();
+        }
+    })
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
-    noteListItem.appendChild(deleteButton)
+    deleteButton.addEventListener('click', function(){
+        noteList.removeChild(noteListItem);
+    });
 
 
+    noteListItem.appendChild(checkbox);
+    noteListItem.appendChild(noteSpan);
+
+
+    noteListItem.appendChild(editButton);
+    noteListItem.appendChild(deleteButton);
 
 
     noteList.appendChild(noteListItem);
