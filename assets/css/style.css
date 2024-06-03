@@ -1,5 +1,5 @@
 /* Override default syles added by browser*/
-* {
+/* {
     padding: 0;
     margin: o;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ header {
 }
 
 /* Media query: tablets and larger {768px and up)*/
-    @media scrren and (min-width: 768px) {
+   /* @media scrren and (min-width: 768px) {
         nav {
             display: block;
             position: relative;
@@ -43,7 +43,7 @@ header {
         }*/
     }
 
-    #note-app {
+   /* #note-app {
         max-width: 400px;
         background-color: aliceblue;
         margin: 10px auto 0px;
@@ -70,7 +70,7 @@ header {
         border: 10px solid: white;
     }*/
 
-    #note-form input[type='text'] {
+   /* #note-form input[type='text'] {
         font-size: 1rem;
         border-radius: 5px;
         padding: 10px;
@@ -103,7 +103,7 @@ header {
         background-color: aqua;
     }
 
-    /*.item-note {
+    .item-note {
         display: flex;
         flex-direction: column;
     }*/

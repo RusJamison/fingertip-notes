@@ -16,13 +16,15 @@ const noteList = document.querySelector('#note-list');
 const noteInput = document.querySelector('#note-input');
 const noteButton = document.getElementById('#note-button')
 
-noteButton.addEventListener('click', function(event) {
+
+noteButton.addEventListener('submit', function(event) {
     event.preventDefault();
     const newJob = noteInput.value.trim();
 
     if (newJob === '') {
         alert ( 'Enter new job');
         return;
+    
     }
 
     noteInput.value = '';
@@ -34,7 +36,8 @@ noteButton.addEventListener('click', function(event) {
 function addTask(job){
     const noteListItem = document.createElement('li');
 
-    const checkbox.type = 'checkbox';
+    const checkbox = document.createElement('input'); 
+    checkbox.type = 'checkbox';
     checkbox.addEventListener('change', function(){
         noteSpan.style.textDecoration =checkbox.checked?'line-through':'none';
     })
