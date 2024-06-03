@@ -12,24 +12,43 @@ function addDate(){
 }
 
 //Declaring variables
-const noteList = document.querySelector('note-list');
-const noteInput = document.querySelector('note-input');
-const noteForm = document.querySelector('note-form');
-const noteButton = document.getElementById('note-button')
+const noteList = document.querySelector('#note-list');
+const noteInput = document.querySelector('#note-input');
+const noteForm = document.querySelector('#note-form');
+const noteButton = document.getElementById('#note-button')
 
-noteButton.addEventListener('submit', function(event) {
+noteButton.addEventListener('click', function(event) {
     event.preventDefault();
-    const newTask = noteInput.value;
+    const newJob = noteInput.value;
 
-    if(newTask === ""){
-        alert('Please enter a todo note');
+    if (newJob === ' ') {
+        alert ( 'Enter new job');
         return;
-
     }
+
     noteInput.value = '';
-    addTask (newTask);
+    addTask(newJob);
+
+    
 })
-function addTask(task){
+
+function addTask(job){
+    const noteListItem = document.createElement('li');
+    const noteSpan = document.createElement('span');
+    //noteListItem.textContent = note;
+    //noteList.appendChild(noteListItem);
+    noteSpan.textContent = job;
+    noteListItem.appendChild(noteSpan);
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    noteListItem.appendChild(deleteButton)
+
+
+
+
+    noteList.appendChild(noteListItem);
 
 }
+
 

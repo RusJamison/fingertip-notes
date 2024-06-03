@@ -103,3 +103,8 @@ header {
         background-color: aqua;
     }
 
+    /*.item-note {
+        display: flex;
+        flex-direction: column;
+    }*/
+
