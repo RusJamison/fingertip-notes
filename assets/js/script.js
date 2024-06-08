@@ -141,6 +141,11 @@ ${
     return formattedDate;
   }
 
+    //// Initial changeGlobalDueDate, and displayTasks
+changeGlobalDueDate();
+displayTasks();
+
+
 
 
 
