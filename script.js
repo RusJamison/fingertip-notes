@@ -1,8 +1,6 @@
-
-
 /* Access of date for planning to do list*/
 function addDate(){
-    let date = new Date();
+    let date = newDate();
     let month = date.getMonth() + 1;
     let day = date.getDate();
     let year = date.getFullYear();
@@ -21,7 +19,7 @@ const noteInput = document.querySelector('#note-input');
 const noteButton = document.querySelector('#note-button');
 
 
-noteButton.addEventListener('button', function(event) {
+noteButton.addEventListener('submit', function(event) {
     event.preventDefault();
     const newJob = noteInput.value.trim();
 

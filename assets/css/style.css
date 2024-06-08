@@ -1,5 +1,5 @@
 /* Override default syles added by browser*/
-/* {
+{
     padding: 0;
     margin: o;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ header {
 }
 
 /* Media query: tablets and larger {768px and up)*/
-   /* @media scrren and (min-width: 768px) {
+    @media scrren and (min-width: 768px) {
         nav {
             display: block;
             position: relative;
@@ -43,13 +43,14 @@ header {
         }*/
     }
 
-   /* #note-app {
+    #note-app {
         max-width: 400px;
         background-color: aliceblue;
-        margin: 10px auto 0px;
+        margin: 10px auto 10px;
         padding: 10px;
         border-radius: 40px 10px;
         border: 10px solid green;
+        height: auto;
     }
 
     #access-date {
@@ -61,27 +62,29 @@ header {
         border: 10px solid green;
     }
 
-   /* p #date {
+   /* #date {
         max-width: 380px;
         background-color: aliceblue;
         margin: 5px auto 0px;
         padding: 5px;
         border-radius: 5px 5px;
         border: 10px solid: white;
+        height: 40px;
     }*/
 
-   /* #note-form input[type='text'] {
+    #note-form input[type='text'] {
         font-size: 1rem;
         border-radius: 5px;
         padding: 10px;
         border: 2px solid blue;
     }
 
-    #note-form button[type='submit'] {
+    #note-button[type='button'] {
         font-size: 1rem;
         border-radius: 5px;
         padding: 0px;
         border: 2px solid blue; 
+        height: 40px;
     }
 
     #note-list {
@@ -96,6 +99,9 @@ header {
 
     #note-list {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+
 
     }
 
@@ -106,5 +112,13 @@ header {
     .item-note {
         display: flex;
         flex-direction: column;
-    }*/
+    }
+
+    ul li{
+        margin-bottom: 10px;
+    }
+
+    .overdue {
+        background-color: #ffb6c1;
+    }
 
