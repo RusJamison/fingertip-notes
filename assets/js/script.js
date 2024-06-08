@@ -79,7 +79,25 @@ ${
     dueDateInput.value = "";
   }
 
+  // Function to edit a task
+  function editTask(index) {
+    const tasks = getTasks();
+    const taskObj = tasks[index];
   
+    editIndex = index;
+    document.getElementById("editTask").value = taskObj.text;
+    document.getElementById("editDueDate").value = taskObj.dueDate
+    ? formattedDateToInput(taskObj.dueDate)
+    : null;
+    document.getElementById("editModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("editModal").style.display = "none";
+  }
+
+
+
 
     
 
