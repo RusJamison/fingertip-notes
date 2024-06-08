@@ -96,6 +96,26 @@ ${
     document.getElementById("editModal").style.display = "none";
   }
 
+  function updateTask() {
+    const task = document.getElementById("editTask").value;
+    const dueDate = document.getElementById("editDueDate").value;
+    const updatedAt = new Date().getTime();
+  
+    if (task) {
+      const tasks = getTasks();
+      tasks[editIndex].text = task;
+      tasks[editIndex].dueDate = new Date(dueDate).getTime();
+      tasks[editIndex].updatedAt = updatedAt;
+      saveTasks(tasks);
+  
+      displayTasks();
+      closeModal();
+    } else {
+      alert("Please fill out both fields.");
+    }
+  }
+
+
 
 
 
