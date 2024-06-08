@@ -54,6 +54,33 @@ ${
     });
   }
 
+   // Function to add a new task
+   function addTask() {
+    const newTaskInput = document.getElementById("note-input");
+    const dueDateInput = document.getElementById("dueDate").value;
+    const newTaskText = newTaskInput.value.trim();
+  
+    if (newTaskText !== null && newTaskText.trim() !== "") {
+      const tasks = getTasks();
+      const newTask = {
+        text: newTaskText.trim(),
+        createdDate: new Date().getTime(), // Timestamp of creation
+        dueDate: new Date(dueDateInput).getTime(),
+        updatedAt: null,
+      };
+      console.log("newTask : ", newTask);
+      tasks.push(newTask);
+      saveTasks(tasks);
+      displayTasks();
+    } else {
+      alert("Please add the new task");
+    }
+    newTaskInput.value = "";
+    dueDateInput.value = "";
+  }
+
+  
+
     
 
 
