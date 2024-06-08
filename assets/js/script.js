@@ -115,6 +115,33 @@ ${
     }
   }
 
+  // Function to delete a task
+  function deleteTask(index) {
+    const tasks = getTasks();
+    tasks.splice(index, 1);
+    saveTasks(tasks);
+    displayTasks();
+  }
+  
+  function formattedDateToInput(dateParam) {
+    const date = dateParam ? new Date(dateParam) : new Date();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    let year = date.getFullYear();
+  
+    let formattedDate =
+      year +
+      "-" +
+      (month < 10 ? "0" : "") +
+      month +
+      "-" +
+      (day < 10 ? "0" : "") +
+      day;
+  
+    return formattedDate;
+  }
+
+
 
 
 
