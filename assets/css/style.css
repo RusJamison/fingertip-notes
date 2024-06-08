@@ -64,6 +64,15 @@ header {
         border: 10px solid green;
     }
 
+    #note-form{
+        max-width: 400px;
+        ackground-color: aliceblue;
+        margin: 10px auto 0px;
+        padding: 10px;
+        border-radius: 10px 10px;
+        border: 10px solid green;
+    }
+
    /* #date {
         max-width: 380px;
         background-color: aliceblue;
@@ -73,6 +82,13 @@ header {
         border: 10px solid: white;
         height: 40px;
     }*/
+    #note-date {
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 0px;
+        border: 2px solid blue; 
+        
+    }
 
     #note-form input[type='text'] {
         font-size: 1rem;
@@ -86,7 +102,24 @@ header {
         border-radius: 5px;
         padding: 0px;
         border: 2px solid blue; 
-        height: 40px;
+        height: 40px
+    }
+
+    #dueDate {
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 0px;
+        border: 2px solid blue; 
+        
+    }
+
+    #note-input {
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 0px;
+        border: 2px solid blue; 
+        
+
     }
 
     #note-list {
@@ -145,7 +178,7 @@ header {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 5px;
 }
 
