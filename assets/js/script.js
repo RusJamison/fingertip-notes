@@ -7,6 +7,11 @@ function changeGlobalDueDate() {
     }
     displayTasks();
   }
+
+  function getTasks() {
+    return JSON.parse(localStorage.getItem("tasks")) || [];
+  }  
+
     // Function to save tasks to local storage
     function saveTasks(tasks) {
         localStorage.setItem("tasks", JSON.stringify(tasks));
