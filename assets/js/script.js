@@ -58,6 +58,7 @@ ${
       todoList.appendChild(taskElement);
     });
   }
+ 
 
    // Function to add a new task
    function addTask() {
