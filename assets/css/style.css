@@ -21,7 +21,7 @@ main {
 header {
     display:flex;
     justify-content: center;
-    background-color:aqua;
+    background-color:green;
     padding: 0 1rem;
     z-index: 99;
     width: 50%;
@@ -68,7 +68,7 @@ header {
         margin: 10px auto 0px;
         padding: 10px;
         border-radius: 10px 10px;
-        border: 10px solid green;
+        /*border: 10px solid green;*/
     }
 
     #note-form{
@@ -77,7 +77,7 @@ header {
         margin: 10px auto 0px;
         padding: 10px;
         border-radius: 10px 10px;
-        border: 10px solid green;
+        /*border: 10px solid green;*/
     }
 
    /* #date {
