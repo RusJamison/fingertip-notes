@@ -19,10 +19,12 @@ main {
 }
 
 header {
+    display:flex;
+    justify-content: center;
     background-color:aqua;
     padding: 0 1rem;
     z-index: 99;
-    width: 100%;
+    width: 30%;
     box-shadow: 0 2px 2px blue;
 }
 
@@ -205,7 +207,7 @@ header {
     left: 10px;
     z-index: 10;
     padding: 20px;
-    gap: 10%
+    gap: 100px;
 }
 
 
