@@ -40,10 +40,7 @@ ${taskDueDate ? `<span>${taskDueDate.toLocaleString()}</span> ` : ""}
 ${taskUpdatedAt ? `<br />` : ""}
 ${taskUpdatedAt ? "Updated " : ""}
 ${
-  taskUpdatedAt
-    ? `<span>${taskUpdatedAt.toLocaleString()}</span>`
-    : ""
-}
+  taskUpdatedAt? `<span>${taskUpdatedAt.toLocaleString()}</span>`: ""}
 <button onclick="editTask(${index})">Edit</button>
 <button onclick="deleteTask(${index})">Delete</button>
 <br /> <br />
@@ -92,8 +89,7 @@ ${
   
     editIndex = index;
     document.getElementById("editTask").value = taskObj.text;
-    document.getElementById("editDueDate").value = taskObj.dueDate
-    ? formattedDateToInput(taskObj.dueDate)
+    document.getElementById("editDueDate").value = taskObj.dueDate? formattedDateToInput(taskObj.dueDate)
     : null;
     document.getElementById("editModal").style.display = "block";
   }

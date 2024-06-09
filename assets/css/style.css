@@ -1,7 +1,7 @@
 /* Override default syles added by browser*/
-{
-    padding: 0;
-    margin: o;
+    *{
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -24,26 +24,31 @@ header {
     background-color:aqua;
     padding: 0 1rem;
     z-index: 99;
-    width: 30%;
-    box-shadow: 0 2px 2px blue;
+    width: 50%;
+    box-shadow: 0 2px 2px blue
 }
 
+        
 /* Media query: tablets and larger {768px and up)*/
-    @media scrren and (min-width: 768px) {
-        nav {
-            display: block;
-            position: relative;
-            box-shadow: none;
-            width:fit-content;
-            padding-right: 1rem;
-        }
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width:fit-content;
+        padding-right: 1rem;
+    }
+}
+ 
+
+
         /*#xxxx {
             display: flex;
         }
         #xxxx > li {
             padding-left: 1rem;
         }*/
-    }
+    
 
     #note-app {
         max-width: 762px;
@@ -68,7 +73,7 @@ header {
 
     #note-form{
         max-width: 400px;
-        ackground-color: aliceblue;
+        background-color: aliceblue;
         margin: 10px auto 0px;
         padding: 10px;
         border-radius: 10px 10px;
@@ -157,7 +162,7 @@ header {
 
     .overdue {
         background-color: #ffb6c1;
-        font-size: 14;
+        font-size: 14px;
     }
 
     /* Modal styles */
@@ -198,6 +203,13 @@ header {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Laptop and desktop 992px and up*/
+@media screen and (min-width: 992px) {
+    #note-app{
+      width:max-content
+    }  
+  }
 
 #social {
     display: flex;
