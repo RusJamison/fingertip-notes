@@ -31,11 +31,12 @@
         <div id="note-app">
             <h2>To Do List</h2>
             <form id="note-form">
-               <textarea rows="6" cols="28"  id="note-input" placeholder="Add a new task or note here and if you want to enter a due date for your task use calendar below then click Add Todo below"></textarea>
+               <textarea rows="6" cols="28"  id="editor" placeholder="Add a new task or note here and if you want to enter a due date for your task use calendar below then click Add Todo below"></textarea>
                
     
                 <input type="date" id="dueDate" required>
                 <button id="note-button" type="button" onclick="addTask()">Add Todo</button>
+                <button onclick="toggleDates()" type="button">Show/Hide Dates</button>
             </form>
             
             <div id="note-list">
@@ -70,6 +71,7 @@
         </ul>
 
     </footer>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

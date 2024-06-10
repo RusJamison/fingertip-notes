@@ -1,3 +1,32 @@
+let editorInstance;
+let editorEditInstance;
+let datesVisible = true;
+
+document.addEventListener("DOMContentLoaded", () => {
+  ClassicEditor.create(document.querySelector("#editor"))
+  .then((editor) => {
+  editorInstance = editor;
+
+  // Load saved content from localStorage
+const savedContent = localStorage.getItem("editorContent");
+if (savedContent) {
+editorInstance.setData(savedContent);
+}
+})
+
+.catch((error) => {
+  console.error(error);
+  });
+  ClassicEditor.create(document.querySelector("#editTask"))
+  .then((editor) => {
+  editorEditInstance = editor;
+  })
+  .catch((error) => {
+  console.error(error);
+  });
+  });
+  
+
 function changeGlobalDueDate() {
     const dueDate = document.getElementById("note-date").value;
     if (!dueDate) {
@@ -30,22 +59,29 @@ function changeGlobalDueDate() {
       const taskDate = new Date(task.createdDate);
       const taskDateTime = new Date(task.createdDate).getTime();
 
+      
       taskElement.innerHTML = `
-<span>${task.text}</span> 
-<br />
-Created At <span>${taskDate.toLocaleString()}</span> 
-${taskDueDate ? `<br />` : ""}
-${taskDueDate ? "Due " : ""}
-${taskDueDate ? `<span>${taskDueDate.toLocaleString()}</span> ` : ""}
-${taskUpdatedAt ? `<br />` : ""}
-${taskUpdatedAt ? "Updated " : ""}
-${
-  taskUpdatedAt? `<span>${taskUpdatedAt.toLocaleString()}</span>`: ""}
-<button onclick="editTask(${index})">Edit</button>
-<button onclick="deleteTask(${index})">Delete</button>
-<br /> <br />
-`;
-
+      <span class="text-left">${task.text}</span> 
+      <br />
+      <span class="fs-12 date">Created At </span> <span class="fs-12 date">${taskDate.toLocaleString()}</span> 
+      ${taskDueDate ? `<br />` : ""}
+      ${taskDueDate ? `<span class="fs-12 date">Due </span> ` : ""}
+      ${
+        taskDueDate
+          ? `<span class="fs-12 date">${taskDueDate.toLocaleString()}</span> `
+          : ""
+      }
+      ${taskUpdatedAt ? `<br />` : ""}
+      ${taskUpdatedAt ? `<span class="fs-12 date">Updated </span>` : ""}
+      ${
+        taskUpdatedAt
+          ? `<span class="fs-12 date">${taskUpdatedAt.toLocaleString()}</span>`
+          : ""
+      }
+      <button onclick="editTask(${index})">Edit</button>
+      <button onclick="deleteTask(${index})">Delete</button>
+      <br /> <br />
+      `;
   
       let dueDateValue = document.getElementById("note-date").value;
       let dueDateTime = new Date(dueDateValue).getTime();
@@ -59,14 +95,18 @@ ${
 
    // Function to add a new task
    function addTask() {
+    const editorData = editorInstance.getData();
+    const newTaskInput = editorData;
+    const dueDateInput = document.getElementById("dueDate").value;
+   /*function addTask() {
     const newTaskInput = document.getElementById("note-input");
     const dueDateInput = document.getElementById("dueDate").value;
-    const newTaskText = newTaskInput.value.trim();
+    const newTaskText = newTaskInput.value.trim();*/
   
-    if (newTaskText !== null && newTaskText.trim() !== "") {
+    if (newTaskInput !== null && newTaskInput !== "") {
       const tasks = getTasks();
       const newTask = {
-        text: newTaskText.trim(),
+        text: newTaskInput,
         createdDate: new Date().getTime(), // Timestamp of creation
         dueDate: new Date(dueDateInput).getTime(),
         updatedAt: null,
@@ -78,8 +118,8 @@ ${
     } else {
       alert("Please add the new task");
     }
-    newTaskInput.value = "";
-    dueDateInput.value = "";
+    editorInstance.setData("");
+  dueDateInput.value = "";
   }
 
   // Function to edit a task
@@ -88,7 +128,8 @@ ${
     const taskObj = tasks[index];
   
     editIndex = index;
-    document.getElementById("editTask").value = taskObj.text;
+    editorEditInstance.setData(taskObj.text);
+    //document.getElementById("editTask").value = taskObj.text;
     document.getElementById("editDueDate").value = taskObj.dueDate? formattedDateToInput(taskObj.dueDate)
     : null;
     document.getElementById("editModal").style.display = "block";
@@ -99,7 +140,7 @@ ${
   }
 
   function updateTask() {
-    const task = document.getElementById("editTask").value;
+    const task = editorEditInstance.getData();
     const dueDate = document.getElementById("editDueDate").value;
     const updatedAt = new Date().getTime();
   
@@ -141,6 +182,14 @@ ${
       day;
   
     return formattedDate;
+  }
+
+  function toggleDates() {
+    datesVisible = !datesVisible;
+    const dateElements = document.querySelectorAll(".date");
+    dateElements.forEach((element) => {
+      element.classList.toggle("hidden", !datesVisible);
+    });
   }
 
     //// Initial changeGlobalDueDate, and displayTasks
