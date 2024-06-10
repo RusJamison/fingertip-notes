@@ -129,7 +129,7 @@ function changeGlobalDueDate() {
   
     editIndex = index;
     editorEditInstance.setData(taskObj.text);
-    //document.getElementById("editTask").value = taskObj.text;
+    document.getElementById("editTask").value = taskObj.text;
     document.getElementById("editDueDate").value = taskObj.dueDate? formattedDateToInput(taskObj.dueDate)
     : null;
     document.getElementById("editModal").style.display = "block";

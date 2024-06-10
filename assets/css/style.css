@@ -58,7 +58,7 @@ header {
         border-radius: 40px 10px;
         border: 10px solid green;
         height: auto;
-       /* text-align: -webkit-center;*/
+        text-align: -webkit-center;
        text-align: center
        }
 
