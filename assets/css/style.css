@@ -72,7 +72,7 @@ header {
     }
 
     #note-form{
-        max-width: 400px;
+        max-width: 300px;
         background-color: aliceblue;
         margin: 10px auto 0px;
         padding: 10px;
@@ -109,7 +109,7 @@ header {
         border-radius: 5px;
         padding: 0px;
         border: 2px solid blue; 
-        height: 40px
+        height: 20px
     }
 
     #dueDate {
@@ -117,6 +117,16 @@ header {
         border-radius: 5px;
         padding: 0px;
         border: 2px solid blue; 
+        height: 20px;
+        
+    }
+
+    #show-hide {
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 0px;
+        border: 2px solid blue; 
+        height: 20px;
         
     }
 
@@ -224,7 +234,7 @@ header {
 }
 
 .ck-editor_editable_inline {
-    min-height: 600px;
+    min-height: 300px;
     padding: 50px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
