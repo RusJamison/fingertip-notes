@@ -137,4 +137,29 @@ To minimize unnecessary forgetting important tasks and information this site ass
 
 
 
+| Feature        | Steps                                                                          | Outcome                                                                | Results |
+| -------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------- | ------- |
+|                |                                                                                |                                                                        |         |
+| Navigation Bar | Click Home, Resources and Sign-up Links                                        | Links response and open appropriate links                              | Pass    |
+|                |                                                                                |                                                                        |         |
+| Responsiveness | All features test carried on desktops, tablets and mobiles                     | Test on mobile, laptop ,tablets and screens to 1800px okay             | Pass    |
+|                |                                                                                |                                                                        |         |
+| Footer         | Click on Facebook, Twitter and YouTube links<br>                               | Links response and open appropriate pages                              | Pass    |
+|                |                                                                                |                                                                        |         |
+| Links on pages | Click on any links on pages                                                    | All links open to appropriate pages                                    | Pass    |
+|                |                                                                                |                                                                        |         |
+| Landing Page   | Check user experince, Check for positioning, colours and<br> readabity of text | Check for positioning, colours and readabity of text all clear         | Pass    |
+|                |                                                                                |                                                                        |         |
+| Footer         | User Experience check on all pages                                             | Look the same on all pages, forced to the bottom and is to<br> be seen | Pass    |
+|                |                                                                                |                                                                        |         |
+| Form Sign-up   | Complete all fields and submit form                                            | Acknowlegement form submitted                                          | Pass    |
+|                |                                                                                |                                                                        |         |
+| Form name      | Try send form with no name                                                     | Please fill out the field fail because name is a must field            | Pass    |
+|                |                                                                                |                                                                        |         |
+| Form surname   | Try send form with no surname                                                  | Please fill out the field fail because surname is a must field         | Pass    |
+|                |                                                                                |                                                                        |         |
+| Form email     | Try send incomplete email                                                      | Please include '@' in the email address                                | Pass    |
+|                |                                                                                |                                                                        |         |
+| Form password  | Try leave the field empty                                                      | Please fill this field                          
+
 
