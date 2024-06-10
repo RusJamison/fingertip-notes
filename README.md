@@ -20,7 +20,7 @@ Technology is on our side, while there are lot of To Do applications on the mark
 
 To minimize unnecessary forgetting important tasks and information this site assist the public to record their notes and retrive them anywhere they are. Engineers, Medical staff and Scientists will have special option to populate their notes/to do lists. 
 
-![Screen size response](documentation/response.webp)
+![Screen size response](documentation/response2.webp)
 
 ## Table of Contents
 
@@ -133,33 +133,27 @@ To minimize unnecessary forgetting important tasks and information this site ass
     * Edge
     * Android
 
-* Feature Testing
-
-
-
-| Feature        | Steps                                                                          | Outcome                                                                | Results |
-| -------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------- | ------- |
-|                |                                                                                |                                                                        |         |
-| Navigation Bar | Click Home, Resources and Sign-up Links                                        | Links response and open appropriate links                              | Pass    |
-|                |                                                                                |                                                                        |         |
-| Responsiveness | All features test carried on desktops, tablets and mobiles                     | Test on mobile, laptop ,tablets and screens to 1800px okay             | Pass    |
-|                |                                                                                |                                                                        |         |
-| Footer         | Click on Facebook, Twitter and YouTube links<br>                               | Links response and open appropriate pages                              | Pass    |
-|                |                                                                                |                                                                        |         |
-| Links on pages | Click on any links on pages                                                    | All links open to appropriate pages                                    | Pass    |
-|                |                                                                                |                                                                        |         |
-| Landing Page   | Check user experince, Check for positioning, colours and<br> readabity of text | Check for positioning, colours and readabity of text all clear         | Pass    |
-|                |                                                                                |                                                                        |         |
-| Footer         | User Experience check on all pages                                             | Look the same on all pages, forced to the bottom and is to<br> be seen | Pass    |
-|                |                                                                                |                                                                        |         |
-| Form Sign-up   | Complete all fields and submit form                                            | Acknowlegement form submitted                                          | Pass    |
-|                |                                                                                |                                                                        |         |
-| Form name      | Try send form with no name                                                     | Please fill out the field fail because name is a must field            | Pass    |
-|                |                                                                                |                                                                        |         |
-| Form surname   | Try send form with no surname                                                  | Please fill out the field fail because surname is a must field         | Pass    |
-|                |                                                                                |                                                                        |         |
-| Form email     | Try send incomplete email                                                      | Please include '@' in the email address                                | Pass    |
-|                |                                                                                |                                                                        |         |
-| Form password  | Try leave the field empty                                                      | Please fill this field                          
-
-
+* Feature| Outcome                                                         | Results |
+| -------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ------- |
+|                |                                                            |                                                                 |         |
+| Calender       | Click on the Calendar                                      | Opens calendar and user can set any date user want              | Pass    |
+|                |                                                            |                                                                 |         |
+| Responsiveness | All features test carried on desktops, tablets and mobiles | Test on mobile, laptop ,tablets and screens to 1800px okay      | Pass    |
+|                |                                                            |                                                                 |         |
+| Footer         | Click on Facebook, Twitter and YouTube links               | Links response and open appropriate pages                       | Pass    |
+|                |                                                            |                                                                 |         |
+| Button         | Click To do button                                         | Display a task and send to local storage                        | Pass    |
+|                |                                                            |                                                                 |         |
+| Landing Page   | Check user experince.                                      | Check for positioning, colours and readabilty of text all clear | Pass    |
+|                |                                                            |                                                                 |         |
+| Footer         | User Experience check at the buttom of the  page           | Looks simple and easy to click, forced to the bottom of page    | Pass    |
+|                |                                                            |                                                                 |         |
+| Add a Task     | Enter Task in textarea click Add Todo                      | Acknowledgement task displayed with created date                | Pass    |
+|                |                                                            |                                                                 |         |
+| Add a Task     | Enter Task in textarea field and add Due date<br>          |  Task displayed with created date and Due date                  | Pass    |
+|                |                                                            |                                                                 |         |
+| Add a Task     | Try to leave the Task field empty and click Add Todo       | Please add the new Task                                         | Pass    |
+|                |                                                            |                                                                 |         |
+| Button         | Click on Edit                                              | Allow user to update a current task plus updated date included  | Pass    |
+|                |                                                            |                                                                 |         |
+| Button         | Click Show/Hide button                                     | Dates are shown or hidden                                       | Pass    |---|---|---|---|

@@ -73,6 +73,7 @@ header {
 
     #note-form{
         max-width: 300px;
+        height: auto;
         background-color: aliceblue;
         margin: 10px auto 0px;
         padding: 10px;
@@ -196,7 +197,7 @@ header {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 400px;
+    min-width: 300px;
     border-radius: 5px;
 }
 
@@ -234,10 +235,16 @@ header {
 }
 
 .ck-editor_editable_inline {
-    min-height: 300px;
+    height: fit-content;
+    min-height: 400px;
     padding: 50px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+}
+
+.ck ck-editor_main {
+    height: fit-content;
+    min-height: 100px;
 }
 
 .fs-12 {
