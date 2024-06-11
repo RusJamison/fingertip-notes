@@ -133,7 +133,30 @@ To minimize unnecessary forgetting important tasks and information this site ass
 
 * Features Testing
 
-
+| Feature        | Steps                                                      | Outcome                                                         | Results |
+| -------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ------- |
+|                |                                                            |                                                                 |         |
+| Calendar       | Click on the Calendar                                      | Opens calendar and user can set any date user want              | Pass    |
+|                |                                                            |                                                                 |         |
+| Responsiveness | All features test carried on desktops, tablets and mobiles | Test on mobile, laptop ,tablets and screens to 1800px okay      | Pass    |
+|                |                                                            |                                                                 |         |
+| Footer         | Click on Facebook, Twitter and YouTube links               | Links response and open appropriate pages                       | Pass    |
+|                |                                                            |                                                                 |         |
+| Button         | Click To do button                                         | Display a task and send to local storage                        | Pass    |
+|                |                                                            |                                                                 |         |
+| Landing Page   | Check user experince.                                      | Check for positioning, colours and readabilty of text all clear | Pass    |
+|                |                                                            |                                                                 |         |
+| Footer         | User Experience check at the buttom of the  page           | Looks simple and easy to click, forced to the bottom of page    | Pass    |
+|                |                                                            |                                                                 |         |
+| Add a Task     | Enter Task in textarea click Add Todo                      | Acknowledgement task displayed with created date                | Pass    |
+|                |                                                            |                                                                 |         |
+| Add a Task     | Enter Task in textarea field and add Due date<br>          |  Task displayed with created date and Due date                  | Pass    |
+|                |                                                            |                                                                 |         |
+| Add a Task     | Try to leave the Task field empty and click Add Todo       | Please add the new Task                                         | Pass    |
+|                |                                                            |                                                                 |         |
+| Button         | Click on Edit                                              | Allow user to update a current task plus updated date included  | Pass    |
+|                |                                                            |                                                                 |         |
+| Button         | Click Show/Hide button                                     | Dates are shown or hidden                                       | Pass    |
 
 ### Validator Testing
 
@@ -230,3 +253,4 @@ Favicon (https://www.flaticon.com/free-icon/cardiogram_249205)
 
 
 Favicon (https://icons8.com/icons/set/favicon)
+			
