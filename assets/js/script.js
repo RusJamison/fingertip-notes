@@ -98,10 +98,6 @@ function changeGlobalDueDate() {
     const editorData = editorInstance.getData();
     const newTaskInput = editorData;
     const dueDateInput = document.getElementById("dueDate").value;
-   /*function addTask() {
-    const newTaskInput = document.getElementById("note-input");
-    const dueDateInput = document.getElementById("dueDate").value;
-    const newTaskText = newTaskInput.value.trim();*/
   
     if (newTaskInput !== null && newTaskInput !== "") {
       const tasks = getTasks();
@@ -154,7 +150,7 @@ function changeGlobalDueDate() {
       displayTasks();
       closeModal();
     } else {
-      alert("Please fill out both fields.");
+      alert("Please fill out Task field.");
     }
   }
 

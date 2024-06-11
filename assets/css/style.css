@@ -42,14 +42,6 @@ header {
     }
 }
  
-
-
-        /*#xxxx {
-            display: flex;
-        }
-        #xxxx > li {
-            padding-left: 1rem;
-        }*/
     
 
     #note-app {
@@ -69,7 +61,7 @@ header {
         padding: 10px;
         border-radius: 10px 10px;
         text-align-last: center;
-        /*border: 10px solid green;*/
+        border: 10px solid green;
     }
 
     #note-form{
@@ -78,18 +70,9 @@ header {
         margin: 10px auto 0px;
         padding: 10px;
         border-radius: 10px 10px;
-        /*border: 10px solid green;*/
+        border: 10px solid green;
     }
 
-   /* #date {
-        max-width: 380px;
-        background-color: aliceblue;
-        margin: 5px auto 0px;
-        padding: 5px;
-        border-radius: 5px 5px;
-        border: 10px solid: white;
-        height: 40px;
-    }*/
     #note-date {
         font-size: 1rem;
         border-radius: 5px;
@@ -216,12 +199,6 @@ header {
     cursor: pointer;
 }
 
-/* Laptop and desktop 992px and up*/
-/*@media screen and (min-width: 992px) {
-    #note-app{
-      width:max-content
-    }  
-  }*/
 
 #social {
     display: flex;
@@ -241,10 +218,6 @@ header {
     border: 1px solid #ccc;
 }
 
-/*.ck ck-editor_main {
-    height: fit-content;
-    min-height: 100px;
-}*/
 
 .fs-12 {
     font-size: 12px;
@@ -256,6 +229,11 @@ header {
 
 .hidden {
     display: none;
+}
+
+.notes-description {
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 

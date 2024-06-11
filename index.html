@@ -18,21 +18,21 @@
     <header>
         <h1>Fingertip Notes</h1>
     </header>
-    <a href="index.html">
-        <!--<h2 id="logo">Fingertip Notes</h2>-->
-    </a>
 
     <!--Main Content-->
     <main>
         <div id="access-date">
             <p id="date">
-                <input type="date" id="note-date" onchange = "addDueDate()">
+                <input type="date" id="note-date" onchange = "changeGlobalDueDate()">
             </p>
         </div>
         <div id="note-app">
             <h2>To Do List</h2>
             <form id="note-form">
-               <textarea  id="editor" placeholder="Add a new task or note here and if you want to enter a due date for your task use calendar below then click Add Todo below"></textarea>
+               <textarea  id="editor" ></textarea>
+               <p class="notes-description">*Add a new task or note here and if you want to enter a due date for your
+                task use calendar below then click Add Todo below
+            </p>
                
     
                 <input type="date" id="dueDate" required>
@@ -72,7 +72,7 @@
         </ul>
 
     </footer>
-    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+    <script src="assets/js/ckeditor.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
