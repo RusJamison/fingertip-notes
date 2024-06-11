@@ -66,18 +66,10 @@ function changeGlobalDueDate() {
       <span class="fs-12 date">Created At </span> <span class="fs-12 date">${taskDate.toLocaleString()}</span> 
       ${taskDueDate ? `<br />` : ""}
       ${taskDueDate ? `<span class="fs-12 date">Due </span> ` : ""}
-      ${
-        taskDueDate
-          ? `<span class="fs-12 date">${taskDueDate.toLocaleString()}</span> `
-          : ""
-      }
+      ${taskDueDate? `<span class="fs-12 date">${taskDueDate.toLocaleString()}</span> `: ""}
       ${taskUpdatedAt ? `<br />` : ""}
       ${taskUpdatedAt ? `<span class="fs-12 date">Updated </span>` : ""}
-      ${
-        taskUpdatedAt
-          ? `<span class="fs-12 date">${taskUpdatedAt.toLocaleString()}</span>`
-          : ""
-      }
+      ${ taskUpdatedAt ? `<span class="fs-12 date">${taskUpdatedAt.toLocaleString()}</span>`: ""}
       <button onclick="editTask(${index})">Edit</button>
       <button onclick="deleteTask(${index})">Delete</button>
       <br /> <br />

@@ -157,6 +157,8 @@ To minimize unnecessary forgetting important tasks and information this site ass
     Landing Page Lighthouse Results
 ![Landing Page Lighthouse results](documentation/lighthouse.webp)
 
+![JSHint JavaScript Validator](https://jshint.com/) clear warnings using New JavaScript features (ES6)
+
 
 ## Technologies Used
 
@@ -184,7 +186,7 @@ To minimize unnecessary forgetting important tasks and information this site ass
 
 ## Credits
 
-    The Code Institute Learning Platform, Learning Management System (LMS) was the main basis of my codes for this project mainly from the Coders Coffeehouse project and Love Running.
+    The Code Institute Learning Platform, Learning Management System (LMS) was the main basis of my codes for this project. A number of my codes is based from the Coders Coffeehouse project, Love Running, Love Maths and Ultimate Rock Paper Scissors game.
 
     Thanks to Amy Richardson for the resources she gave us during the course of this project.
 
