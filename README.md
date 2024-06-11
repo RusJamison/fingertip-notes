@@ -20,7 +20,7 @@ Technology is on our side, while there are lot of To Do applications on the mark
 
 To minimize unnecessary forgetting important tasks and information this site assist the public to record their notes and retrive them anywhere they are. Engineers, Medical staff and Scientists will have special option to populate their notes/to do lists. 
 
-![Screen size response](documentation/response2.webp)
+![Screen size response](documentation/response3.webp)
 
 ## Table of Contents
 
@@ -90,9 +90,7 @@ To minimize unnecessary forgetting important tasks and information this site ass
     * The current version because of the time factor to complete it might look crowded with the date stamps.
     * In the future appart from everyone can use it, it will come with special prepopulated option for engineers, medical staff and scientists so that they can easily add quick notes for their work.
 
-    * For families the website will allow them to have common grocery list they can all update live at the same time. When one family member buys items the other members can see that like. There is no need for family members to buy bread or milk at the same time.
-    * 
-    * 
+    * For families the website will allow them to have common grocery list they can all update live at the same time. When one family member buys items the other members can see that like. There is no need for family members to buy bread or milk at the same time. 
 
 ## Deployment
 
@@ -133,27 +131,100 @@ To minimize unnecessary forgetting important tasks and information this site ass
     * Edge
     * Android
 
-* Feature| Outcome                                                         | Results |
-| -------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ------- |
-|                |                                                            |                                                                 |         |
-| Calender       | Click on the Calendar                                      | Opens calendar and user can set any date user want              | Pass    |
-|                |                                                            |                                                                 |         |
-| Responsiveness | All features test carried on desktops, tablets and mobiles | Test on mobile, laptop ,tablets and screens to 1800px okay      | Pass    |
-|                |                                                            |                                                                 |         |
-| Footer         | Click on Facebook, Twitter and YouTube links               | Links response and open appropriate pages                       | Pass    |
-|                |                                                            |                                                                 |         |
-| Button         | Click To do button                                         | Display a task and send to local storage                        | Pass    |
-|                |                                                            |                                                                 |         |
-| Landing Page   | Check user experince.                                      | Check for positioning, colours and readabilty of text all clear | Pass    |
-|                |                                                            |                                                                 |         |
-| Footer         | User Experience check at the buttom of the  page           | Looks simple and easy to click, forced to the bottom of page    | Pass    |
-|                |                                                            |                                                                 |         |
-| Add a Task     | Enter Task in textarea click Add Todo                      | Acknowledgement task displayed with created date                | Pass    |
-|                |                                                            |                                                                 |         |
-| Add a Task     | Enter Task in textarea field and add Due date<br>          |  Task displayed with created date and Due date                  | Pass    |
-|                |                                                            |                                                                 |         |
-| Add a Task     | Try to leave the Task field empty and click Add Todo       | Please add the new Task                                         | Pass    |
-|                |                                                            |                                                                 |         |
-| Button         | Click on Edit                                              | Allow user to update a current task plus updated date included  | Pass    |
-|                |                                                            |                                                                 |         |
-| Button         | Click Show/Hide button                                     | Dates are shown or hidden                                       | Pass    |---|---|---|---|
+* Features Testing
+
+
+
+### Validator Testing
+
+[HTML Validator](https://validator.w3.org)
+
+    Results for index.html with error
+![HTML validation results](documentation/index-error.PNG)
+
+
+    Results for index.html
+![HTML validation results](documentation/index-no-error.PNG)
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+    CSS Results with error
+![CSS results with error](documentation/css-error.PNG)
+
+    CSS Results after correction
+![CSS validation results](documentation/css-no-error.PNG)
+
+    Landing Page Lighthouse Results
+![Landing Page Lighthouse results](documentation/lighthouse.webp)
+
+
+## Technologies Used
+
+    HTML5
+    CSS3
+
+    Git
+    GitHub
+
+    Balsamiq
+
+    Google fonts
+    Font Awesome
+    
+    Visual Studio Code
+    Markdown
+
+## Wireframe
+
+### Landing Page
+
+![Wireframe](documentation/wireframe3.webp)
+
+
+
+## Credits
+
+    The Code Institute Learning Platform, Learning Management System (LMS) was the main basis of my codes for this project mainly from the Coders Coffeehouse project and Love Running.
+
+    Thanks to Amy Richardson for the resources she gave us during the course of this project.
+
+    Thanks to my mentor Brian Macharia for his mentoring sessions, guidance, patience, encouragement and constant motivation throughout the project.
+
+
+### Content
+Javascript Essentials by Lawrence Turton (https://irishheart.ie/your-health/our-health-programmes/healthy-communities/mobile-health-unit/)
+
+Build Responsive Real-World Websites with HTML and CSS by Jonas Schmedtmann (https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3)
+
+The Complete 2024 Web Development Bootcamp by Dr. Angela Yu (https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/)
+
+50 Projects In 50 Days - HTML, CSS & JavaScript by Brad Traversy and Florin Pop (https://www.healthline.com/health-news/why-so-many-men-avoid-doctors?c=62125905332)
+
+IC Technology in medical equipment (https://www.avnet.com/wps/portal/apac/resources/article/ic-technology-in-medical-equipment/)
+
+I love Coding To Do project (https://ilovecoding.org/)
+
+The Modern Javascript Bootcamp Course by Colt Steele (https://www.emedicinehealth.com/checkup/article_em.htm)
+
+Flex codes (https://coder-coder.com/build-flexbox-website-layout/)
+
+Nav (https://tutorials.shecodes.com.au/html_and_css/4_structure/3_nav/)
+
+Flex (https://tutorials.shecodes.com.au/html_and_css/4_structure/3_nav/)
+
+Navigation bar code(https://www.linkedin.com/learning/html-and-css-linking/creating-a-simple-vertical-navigation-bar)
+
+README.md (Love Maths project and Coding Club project Institute Learning Management System)(https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+3/)
+
+README.md(https://github.com/elainebroche-dev/ms1-thrive/)
+
+
+### Media
+WEBP conversion (https://picflow.com/convert/png-to-webp)
+
+Hero image (https://www.pexels.com/)
+
+Favicon (https://www.flaticon.com/free-icon/cardiogram_249205)
+
+
+Favicon (https://icons8.com/icons/set/favicon)
