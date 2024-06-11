@@ -32,7 +32,7 @@
         <div id="note-app">
             <h2>To Do List</h2>
             <form id="note-form">
-               <textarea rows="6" cols="28"  id="editor" placeholder="Add a new task or note here and if you want to enter a due date for your task use calendar below then click Add Todo below"></textarea>
+               <textarea  id="editor" placeholder="Add a new task or note here and if you want to enter a due date for your task use calendar below then click Add Todo below"></textarea>
                
     
                 <input type="date" id="dueDate" required>
@@ -49,7 +49,7 @@
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>Edit Task</h2>
-                <textarea  id="editTask"  rows="6" cols="28" required></textarea>
+                <textarea  id="editTask" required></textarea>
                 <input type="date" id="editDueDate" required>
                 <button onclick="updateTask()">Update Task</button>
             </div>
