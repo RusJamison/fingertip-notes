@@ -64,6 +64,8 @@ To minimize unnecessary forgetting important tasks and information this site ass
 
     ![Landing Page Display Area](documentation/landing-page.webp)
 
+    ![Landing Page Display Area With Date Hidden](documentation/task-no-date.PNG)
+
     * The user decides on a task to accomplish.
         * The user enters the task or notes on the textarea.
         * The user has access to a calendar at the top to quickly decide when to accomplish a task.
@@ -179,6 +181,7 @@ To minimize unnecessary forgetting important tasks and information this site ass
 
     HTML5
     CSS3
+    Javascript
 
     Git
     GitHub
@@ -190,6 +193,10 @@ To minimize unnecessary forgetting important tasks and information this site ass
     
     Visual Studio Code
     Markdown
+
+    JSHint
+
+    CKEditor
 
 ## Wireframe
 
@@ -235,6 +242,7 @@ README.md (Love Maths project and Coding Club project Institute Learning Managem
 
 README.md(https://github.com/elainebroche-dev/ms1-thrive/)
 
+CKEditor(https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor)
 
 ### Media
 WEBP conversion (https://picflow.com/convert/png-to-webp)
